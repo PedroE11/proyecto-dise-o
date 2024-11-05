@@ -1,0 +1,1 @@
+si quieren meter código en el repo, tienen que undir shift+ctrl+p para crear una rama nueva con el nombre que quieran (de breferencia new branch si entran de primeros), hacen lo que tengan que hacer y en el commit dicen que hicieron y me avisan por wass para unir las ramas y meterlas al main
