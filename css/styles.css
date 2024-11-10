@@ -45,104 +45,114 @@ nav {
 }
 
 /* Sección Hero */
-.hero {
-    background-color: #001233;
-    color: white;
-    padding: 4rem 5%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+
+  /* Contenedor principal */
+.hero-section {
     position: relative;
-    overflow: hidden;
-}
-.hero-bg{
-    background-image: url('img/hero-bg.png'); 
+    width: 100%;
+    height: 500px; /* Ajusta la altura según lo necesites */
+    background-image: url('/images/herobackground.png'); /* URL de la imagen de fondo */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-}
-
-/* Contenedor del contenido */
-.content-wrapper {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    padding: 2rem;
-}
-
-/* Contenedor del título */
-.title-section {
-    flex: 1;
-    max-width: 500px;
-}
-
-/* Estilos del título */
-.hero-title {
-    font-size: 4rem;
-    line-height: 1.2;
     color: white;
-    margin-bottom: 2rem;
-}
-
-.hero-title .highlight-green {
-    color: #00ff88;
-}
-
-.hero-title .highlight-orange {
-    color: #ff6b00;
-}
-
-/* Contenedor de las citas */
-.quotes-section {
-    flex: 1;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
+    align-items: flex-start;
+    padding: 50px;
+    }
 
-/* Estilos de las tarjetas de citas */
-.quote-card {
-    padding: 2rem;
-    border-radius: 12px;
+  /* Estilo para el título y subtítulo */
+.hero-text {
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    }
+
+.highlight-green {
+    color: #31e981; /* Verde */
+    }
+
+.highlight-orange {
+    color: #ff7a00; /* Naranja */
+    }
+
+  /* Estilo para los cuadros de citas */
+.quote-box {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.4;
+    }
+
+.quote-box.purple {
+    background-color: #9b59b6;
     color: white;
-    font-size: 1.2rem;
-}
-
-.quote-card.purple {
-    background-color: #6b00ff;
-}
-
-.quote-card.orange {
-    background-color: #ff6b00;
-}
-
-/* Autor de la cita */
-.quote-author {
-    margin-top: 1rem;
-    display: block;
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-@media (max-width: 1024px) {
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+    right: 300px;
+    transform: translateY(-80%);
     }
 
-    .hero-title {
-        font-size: 3rem;
-        text-align: center;
+.quote-box.orange {
+    background-color: #ff7a00;
+    color: white;
+    left: 750px;
+    transform: translateY(-20%);
     }
 
-    .quotes-section {
-        width: 100%;
+/* Triángulos en la parte inferior de la imagen del home*/
+/* Contenedor general */
+
+/* Triángulos (por defecto) */
+.triangle {
+    width: 20px;
+    height: 20px;
+    background-color: #ff7a00;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    margin-right: 10px;
     }
-}
+
+  /* Posicionamiento de los conjuntos de triángulos */
+.triangles-a, .triangles-b, .triangles-c, .triangles-d {
+    display: flex;
+    } 
+
+/* Posicionamiento específico para cada conjunto */
+.triangles-a {
+    display: flex;
+    }
+
+.triangles-b {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+.triangles-c {
+    position: absolute;
+    bottom: -800px;
+    left: 10px;
+    }
+
+.triangles-d {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    }
+
+/* Clase para invertir cualquier conjunto de triángulos */
+.invert {
+    transform: rotate(180deg); /* Esto invierte el contenedor completo */
+    }
 
 /* Sección de Conexión */
 .connect-section {
