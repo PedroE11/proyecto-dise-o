@@ -20,21 +20,33 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>
-                Learn <span class="highlight-green">How</span> To<br>
-                <span class="highlight-orange">make</span> your<br>
-                budget
-            </h1>
-            <div class="quote-card">
-                "The road to wealth basically boils down to two rules: hard work and savings"
-                <br>-Benjamin Franklin
-            </div>
-            <div class="quote-card orange">
-                "Trust is everything in an unknown world, you can trust us, your dreams are in good hands."
-                <br>-Marcus Devs
-            </div>
+        <div> 
+            <img src="/images/herobackground.png" alt="">
         </div>
+        <div class="hero-content">
+            <div class="content-wrapper">
+                <!-- Sección del título -->
+                <div class="title-section">
+                    <h1 class="hero-title">
+                        Learn <span class="highlight-green">How</span> To<br>
+                        <span class="highlight-orange">make</span> your<br>
+                        budget
+                    </h1>
+                </div>
+    
+                <!-- Sección de citas -->
+                <div class="quotes-section">
+                    <div class="quote-card purple">
+                        "The road to wealth basically boils down to two rules: hard work and savings"
+                        <span class="quote-author">-Benjamin Franklin</span>
+                    </div>
+    
+                    <div class="quote-card orange">
+                        "Trust is everything in an unknown world, you can trust us, your dreams are in good hands."
+                        <span class="quote-author">-Marcus Devs</span>
+                    </div>
+                </div>
+            </div>
         <div class="decorative-shapes">
             <!-- Triángulos decorativos -->
         </div>
@@ -45,23 +57,47 @@
             <h2>Connect to <span class="highlight-orange">your</span><br>bank</h2>
             <p>Securely link your accounts and import transactions automatically.</p>
             <a href="#trial" class="start-trial-btn">Start your free trial</a>
+            </div>
+            <div class="connect-bank-image"> 
+            <img src="/images/connect-bank-image.png" alt="">
+            </div>
+            <div class="circles-home">
+            <div class="circle large"></div>
+            <div class="circle medium"></div>
+            <div class="circle small"></div>
+            <div class="circle extra-small"></div>
         </div>
-        <img src="/api/placeholder/300/600" alt="Bank connection interface" class="phone-mockup">
-    </section>
 
-    <footer>
-        <div class="logo">LTB</div>
-        <div class="social-links">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
-            <a href="#linkedin">LinkedIn</a>
-        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-left">
+        <div class="footer-logo">LTB</div>
+        <div class="footer-social">
+            <!-- Ícono de Facebook SVG -->
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692V11.29h3.129V8.413c0-3.1 1.893-4.788 4.656-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.417h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
+            </svg>
+            <!-- Ícono de Twitter SVG -->
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.978 13.978 0 011.671 3.15a4.92 4.92 0 001.523 6.574A4.902 4.902 0 01.96 9.713v.062a4.92 4.92 0 003.946 4.827 4.902 4.902 0 01-2.212.084 4.92 4.92 0 004.6 3.417A9.867 9.867 0 010 21.543a13.924 13.924 0 007.548 2.212c9.057 0 14.01-7.514 14.01-14.01 0-.213-.005-.426-.014-.637A10.025 10.025 0 0024 4.557z"/>
+            </svg>
+            <!-- Ícono de LinkedIn SVG -->
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.23 0H1.77C.792 0 0 .774 0 1.73v20.538C0 23.226.792 24 1.77 24h20.46c.978 0 1.77-.774 1.77-1.732V1.73C24 .774 23.208 0 22.23 0zM7.09 20.452H3.578V9h3.511v11.452zM5.334 7.515a2.035 2.035 0 110-4.07 2.035 2.035 0 010 4.07zM20.452 20.452h-3.511v-5.612c0-1.338-.027-3.062-1.865-3.062-1.868 0-2.154 1.46-2.154 2.968v5.706H9.912V9h3.372v1.561h.048c.47-.891 1.619-1.83 3.33-1.83 3.56 0 4.215 2.345 4.215 5.392v6.329z"/>
+            </svg>
+            <!-- Ícono de Instagram SVG -->
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.312 3.608 1.287.975.975 1.225 2.242 1.287 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.312 2.633-1.287 3.608-.975.975-2.242 1.225-3.608 1.287-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.312-3.608-1.287-.975-.975-1.225-2.242-1.287-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.312-2.633 1.287-3.608C4.495 2.475 5.762 2.225 7.128 2.163c1.266-.058 1.646-.07 4.85-.07zm0 1.845c-3.176 0-3.558.012-4.81.07-1.042.048-1.612.213-1.98.581-.368.368-.533.938-.581 1.98-.058 1.252-.07 1.634-.07 4.81s.012 3.558.07 4.81c.048 1.042.213 1.612.581 1.98.368.368.938.533 1.98.581 1.252.058 1.634.07 4.81.07s3.558-.012 4.81-.07c1.042-.048 1.612-.213 1.98-.581.368-.368.533-.938.581-1.98.058-1.252.07-1.634.07-4.81s-.012-3.558-.07-4.81c-.048-1.042-.213-1.612-.581-1.98-.368-.368-.938-.533-1.98-.581-1.252-.058-1.634-.07-4.81-.07zm0 5.838c-2.293 0-4.162 1.869-4.162 4.162S9.707 17.37 12 17.37s4.162-1.869 4.162-4.162S14.293 9.163 12 9.163zm0 6.787a2.625 2.625 0 110-5.25 2.625 2.625 0 010 5.25zm4.406-7.845a1.005 1.005 0 110-2.01 1.005 1.005 0 010 2.01z"/>
+        </svg>
         <div class="footer-links">
-            <a href="#legal">Legal</a>
-            <a href="#terms">Terms of service</a>
-            <a href="#security">Security</a>
+            <a href="#">Legal</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Security</a>
+            </div> 
+    
         </div>
     </footer>
+
+
 </body>
 </html>

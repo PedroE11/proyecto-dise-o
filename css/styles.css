@@ -52,34 +52,96 @@ nav {
     position: relative;
     overflow: hidden;
 }
-
-.hero-content {
-    max-width: 600px;
+.hero-bg{
+    background-image: url('img/hero-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+/* Contenedor del contenido */
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+/* Contenedor del título */
+.title-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Estilos del título */
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: white;
     margin-bottom: 2rem;
 }
 
-.highlight-green {
-    color: #1DE24E;
+.hero-title .highlight-green {
+    color: #00ff88;
 }
 
-.highlight-orange {
-    color: #FF6600;
+.hero-title .highlight-orange {
+    color: #ff6b00;
 }
 
+/* Contenedor de las citas */
+.quotes-section {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Estilos de las tarjetas de citas */
 .quote-card {
-    background-color: #7209B7;
-    padding: 1rem;
-    border-radius: 8px;
-    margin: 1rem 0;
-    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.quote-card.purple {
+    background-color: #6b00ff;
 }
 
 .quote-card.orange {
-    background-color: #FF6B35;
+    background-color: #ff6b00;
+}
+
+/* Autor de la cita */
+.quote-author {
+    margin-top: 1rem;
+    display: block;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .quotes-section {
+        width: 100%;
+    }
 }
 
 /* Sección de Conexión */
@@ -90,6 +152,49 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.connect-bank-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.circle {
+    position: relative;
+    display: inline-block;  
+    margin-top: 1600px;
+    }
+
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid white;
+        }
+
+.circle.large {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    }
+
+.circle.medium {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 120px;
+    }
+
+.circle.small {
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    left: 30px;
+    }
+
+.connect-bank-image {
+    max-width: 5000px;
 }
 
 .connect-content {
@@ -118,32 +223,61 @@ nav {
 }
 
 /* Footer */
-footer {
-    background-color: #001233;
+.footer {
+    background-color: #040616;
     color: white;
-    padding: 2rem 5%;
-    text-align: center;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    } 
 
-.social-links {
-    margin-top: 1rem;
-}
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+    }
 
-.social-links a {
-    color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
+.footer-logo {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
 
 .footer-links {
-    margin-top: 1rem;
-}
+    display: flex;
+    gap: 20px;
+    margin-left: 150px;
+    }
 
 .footer-links a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+    }
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px
+    }
+
+.footer-social{
+    display: flex;
+    gap: 15px;
+    
 }
+.footer-social a svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+    }
+
+    .footer-social a:hover svg, .footer-links a:hover {
+        fill: #1877f2;
+        }
 
 /* Elementos decorativos */
 .decorative-shapes {
@@ -155,7 +289,7 @@ footer {
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* En móvil podríamos agregar un menú hamburguesa */
+        display: none; 
     }
     
     .connect-section {
