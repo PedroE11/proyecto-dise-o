@@ -12,7 +12,7 @@ body {
     
 }
 
-/* Navegación */
+
 nav {
     background-color: #001233;
     padding: 1rem 5%;
@@ -47,7 +47,7 @@ nav {
     text-decoration: none;
 }
 
-/* Sección Hero */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -55,38 +55,39 @@ nav {
     font-family: Arial, sans-serif;
     }
 
-  /* Contenedor principal */
+
 .hero-section {
     position: relative;
     width: 100%;
-    height: 700px; /* Ajusta la altura según lo necesites */
-    background-image: url('/images/herobackground.png'); /* URL de la imagen de fondo */
-    background-size: 70%;
+    height: 600px;
+    background-image: url('/images/herobackground.png');
+    background-size: 900px;
     background-position: center;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 50px;
+    
     }
 
-  /* Estilo para el título y subtítulo */
+
 .hero-text {
     text-align: left;
     font-size: 60px;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.2;;
+    transform: translate(120px, 180px);
     }
 
 .highlight-green {
-    color: #31e981; /* Verde */
+    color: #31e981; 
     }
 
 .highlight-orange {
-    color: #ff7a00; /* Naranja */
+    color: #ff7a00;
     }
 
-  /* Estilo para los cuadros de citas */
+
 .quote-box {
     position: absolute;
     top: 50%;
@@ -114,10 +115,6 @@ nav {
     transform: translateX(60%);
     }
 
-/* Triángulos en la parte inferior de la imagen del home*/
-/* Contenedor general */
-
-/* Triángulos (por defecto) */
 .triangle {
     width: 20px;
     height: 20px;
@@ -126,40 +123,42 @@ nav {
     margin-right: 10px;
     }
 
-  /* Posicionamiento de los conjuntos de triángulos */
+
 .triangles-a, .triangles-b, .triangles-c, .triangles-d {
     display: flex;
     } 
 
-/* Posicionamiento específico para cada conjunto */
+
 .triangles-a {
-    display: flex;
+    position: absolute;
+    top: 600px;
+    right: 20px;
     }
 
 .triangles-b {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 50px;
+    right: 1200px;
     }
 
 .triangles-c {
     position: absolute;
-    bottom: -800px;
-    left: 10px;
+    top: 500px;
+    right: 1200px;
     }
 
 .triangles-d {
     position: absolute;
-    bottom: 80px;
-    left: 10px;
+    top: 1320px;
+    right: 1300px;
     }
 
-/* Clase para invertir cualquier conjunto de triángulos */
+
 .invert {
-    transform: rotate(180deg); /* Esto invierte el contenedor completo */
+    transform: rotate(180deg); 
     }
 
-/* Sección de Conexión */
+
 .connect-section {
     background-color: #001233;
     color: white;
@@ -169,6 +168,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    height: 750px;
     
 }
 .connect-bank-image {
@@ -180,15 +180,15 @@ nav {
 }
 
 .connect-bank-image img {
-    width: 500px; /* O el tamaño que desees */
+    width: 450px; 
     height: auto;
-    transform: translateX(-150px);
+    transform: translate(-150px, 10px);
 }
 
 .circle-home {
     position: relative;
     display: inline-block;  
-    margin-top:740px;
+    margin-top:900px;
     margin-left: 80px;
     }
 
@@ -196,42 +196,42 @@ nav {
     .circle {
         width: 200px;
         position: absolute;
-        border-radius: 50%;
-        border: 4px solid white;
+        border-radius: 30%;
+        border: 2px solid white;
         }
 
 .circle.large {
     width: 150px;
     height: 150px;
-    top: 0;
-    left: 250px;
+    top: 800px;
+    right: 1240px;
     }
 
 .circle.medium {
     width: 100px;
     height: 100px;
-    top: 50px;
-    left: 390px;
+    top: 850px;
+    left: 270px;
     }
 
 .circle.small {
     width: 50px;
     height: 50px;
-    top: 150px;
-    left: 300px;
+    top: 950px;
+    left: 170px;
     }
 
 .connect-bank-image {
     max-width: 200px;
-    margin-left: 80px;
+    margin-left: 100px;
     position: relative;
-    left: 0;
+    left: 100px;
     z-index: 1;
 }
 
 .connect-content {
     max-width: 500px;
-    margin-left: 150px;
+    transform: translateX(-100px);
 }
 
 .connect-content h2 {
@@ -245,55 +245,56 @@ nav {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Contenedor para los círculos */
+
 .circle-container {
     position: absolute;
-    bottom: -20px; /* Ajusta esta posición según sea necesario */
-    left: 50%; /* Centra el conjunto */
+    bottom: -20px; 
+    left: 50%; 
     transform: translateX(100px);
     transform: translateY(230px);
     display: flex;
     align-items: flex-end;
-    margin-left: 100px; /* Ajusta esta posición según sea necesario */
+    margin-left: 100px; 
     z-index: 10;
     width: 400px;
 }
 
-/* Círculos individuales con tamaños específicos */
+
 .circle {
     border-radius: 70%;
     border: 8px solid white;
+    position: absolute;
+    background-color: #001233 ;
     
 }
 
 
 
 .circle.large-B {
-    width: 200px;
-    height: 200px;
-    position: relative;  /* Necesario para mover el círculo con top y right */
-    top: 100px; /* Mueve el círculo hacia abajo */
-    left: 305px;
+    width: 180px;
+    height: 180px;
+    position: relative;  
+    top: 250px; 
+    left: 350px;
 
 }
 
 .circle.medium-B {
-    width: 100px;
-    height: 100px;
-    right: 150px;
+    width: 140px;
+    height: 140px;
+    top : 340px; 
+    right: 30px;
 }
 
 .circle.small-B {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     right: 100px;
+    top : 380px; 
+    right: 168px;
 }
 
-.circle.extra-small {
-    width: 20px;
-    height: 20px;
-    right: 100px;
-}
+
 
 .start-trial-btn {
     background-color: #FF6600;
@@ -307,14 +308,14 @@ nav {
     margin-left: auto;
 }
 
-/* Footer */
+
 .footer {
     background-color: #040616;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 20px;
+    padding: 32px ;
     font-family: Arial, sans-serif;
     font-size: 14px;
     
@@ -330,12 +331,14 @@ nav {
     font-size: 70px;
     font-weight: bold;
     margin-bottom: 50px;
+    margin-top: 20px;
     }
 
 .footer-links {
     display: flex;
     gap: 20px;
     margin-left: 150px;
+    transform: translateX(270px);
     }
 
 .footer-links a {
@@ -353,7 +356,7 @@ nav {
 .footer-social{
     display: flex;
     gap: 15px;
-    
+    transform: translateY(-50px);
 }
 .footer-social a svg {
     fill: white;
@@ -373,7 +376,7 @@ nav {
     right: 0;
 }
 
-/* Media Queries para Responsividad */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none; 
@@ -394,7 +397,7 @@ nav {
     }
 }
 
-/* Efectos Hover */
+
 .nav-links a:hover,
 .social-links a:hover,
 .footer-links a:hover {
