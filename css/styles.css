@@ -12,16 +12,18 @@ body {
 /* Navegación */
 nav {
     background-color: #001233;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 
 .logo {
     color: white;
     font-size: 3rem;
+    position: relative;
+    left:  36%;
+   
     font-weight: bold;
+
 }
 
 .nav-links {
@@ -43,7 +45,18 @@ nav {
     border-radius: 4px;
     text-decoration: none;
 }
-
+.container{
+    position: relative;
+    margin-top : 1%;
+}
+.peru{
+    position: relative;
+    margin-top : 1%;
+}
+.mexico{
+    position: relative;
+    margin-top: 1%;
+}
 /* Sección Hero */
 .hero {
     background-color: #001233;
