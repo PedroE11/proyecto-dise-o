@@ -1,0 +1,593 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+/*------------------info de container money-----------*/
+.container-money{
+    background-color: #ffffff96;
+    width: 1000px;
+    height: 150px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+ 
+}
+
+.money-box {
+    flex: 1;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+
+  .box-amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  /* Estilos específicos para cada box */
+  .net-worth {
+    background-color: #0a0f2c;
+  }
+
+  .available-balance {
+    background-color: #ff6b00;
+  }
+
+  .net-worth-graph {
+    background-color: #e5e7eb;
+  }
+
+  .net-worth-graph .box-amount,
+  .income-box .box-amount {
+    color: #111827;
+  }
+
+  .income-box {
+    background-color: #e5e7eb;
+  }
+
+  .graph {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .graph-line {
+    width: 12px;
+    height: 20px;
+    border-radius: 2px;
+  }
+
+  .red-graph .graph-line {
+    background-color: #ef4444;
+  }
+
+  .green-graph .graph-line {
+    background-color: #22c55e;
+  }
+/*------------------info de container money-----------*/
+
+.netbox{
+    flex: 1;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.balancebox{
+    flex: 1;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.netbox2{
+    flex: 1;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.incomebox{
+    flex: 1;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*----------información principal-------------*/
+.container-boxes{
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    padding: 1em;
+    display: flex;
+    gap: 2rem;
+}
+/*----------información principal-------------*/
+
+/*Columna izquierda */
+.col-left{
+    flex: 2;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*-------weekbox inicio----------------------------*/
+.weekbox{
+    border-radius: 2rem;
+    border: 2px solid red;
+}
+
+.weekbox:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.02); /* Hace el contenedor ligeramente más brillante */
+}
+
+.weekbox {
+    position: relative;
+    padding: 2rem;
+}
+
+.weekbox-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.weekdays-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    position: relative;
+}
+
+.weekday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.weekday-line {
+    width: 2px;
+    background-color: #1a237e;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.weekday-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e8eaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Hover states */
+.weekday:hover .weekday-circle {
+    background-color: #1a237e;
+    color: white;
+}
+
+.weekday:hover .weekday-line {
+    width: 4px;
+}
+
+.weekday::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(26, 35, 126, 0.1) 0%, rgba(26, 35, 126, 0.05) 100%);
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.weekday:hover::before {
+    opacity: 1;
+}
+
+/* Para mostrar el valor en hover */
+.weekday-value {
+    position: absolute;
+    top: -30px;
+    background-color: #1a237e;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.weekday:hover .weekday-value {
+    opacity: 1;
+}
+
+.weekday-line {
+    /* ... tus estilos existentes ... */
+    position: relative;
+    z-index: 1;
+}
+
+.weekday-circle {
+    /* ... tus estilos existentes ... */
+    position: relative;
+    z-index: 1;
+}
+
+.weekday-value {
+    /* ... tus estilos existentes ... */
+    z-index: 2;
+}
+/*-------weekbox final----------------------------*/
+
+/*-------------goalbox----------------------*/
+.goalbox{
+    flex: 1;
+    border-radius: 2rem;
+    border: 2px solid red;
+}
+
+.goalbox {
+    padding: 1.5rem;
+    position: relative;
+    background-color: #F3F4F6;
+    border-radius: 1.5rem;
+    height: 100%;
+}
+
+.goal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.goal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.goal-percentage {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF4500;
+}
+
+.goal-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.goal-subtitle {
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.goal-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #E8EEF9;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 45%;
+    height: 100%;
+    background-color: #1a237e;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+
+/* Hover effects opcionales */
+.goalbox:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar:hover .progress-fill {
+    background-color: #2a337e;
+}
+/*-------------goalbox----------------------*/
+
+/*-------------notibox--------------------*/
+.notibox{
+    flex: 1;
+    border-radius: 2rem;
+    border: 2px solid red;
+}
+
+.notibox {
+    padding: 1.5rem;
+    background-color: #F3F4F6;
+    border-radius: 1.5rem;
+    position: relative;
+    height: 100%;
+}
+
+.noti-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.noti-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.noti-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #666;
+    border-radius: 0.75rem;
+    position: relative;
+}
+
+.noti-icon::before {
+    content: "•••";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.noti-message {
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.noti-indicator {
+    width: 4px;
+    background-color: #FF4500;
+    margin-right: 1rem;
+}
+
+.noti-content {
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+/* Hover effects opcionales */
+.notibox:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+/*-------------notibox--------------------*/
+
+/* Columna derecha*/
+
+.col-right{
+    flex: 1;
+    border: 2px solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilos para el mExpensbox */
+.mExpensbox {
+    padding: 2rem;
+    background-color: #F3F4F6;
+    border-radius: 1.5rem;
+}
+
+.expense-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expense-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-orange {
+    background-color: #FF4500;
+}
+
+.icon-blue {
+    background-color: #E1EFFE;
+}
+
+.expense-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+.expense-icon.icon-blue svg {
+    color: #1a1a1a;
+}
+
+.expense-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.expense-amount {
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+/* Hover effects opcionales */
+.mExpensbox:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*--------investibox------------------*/
+
+.investibox {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .donut-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #5900ff 0deg 90deg,  /* Apple - reduced */
+      #4285f4 90deg 180deg, /* Google */
+      #e3e8ee 180deg 270deg, /* Amazon - added */
+      #ff6b00 270deg 360deg /* Samsung */
+    );
+    position: relative;
+    margin: 0 auto 24px;
+  }
+
+  .donut-hole {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f0f2f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .investments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .investment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .company {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .amount {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .apple {
+    background: #5900ff;
+    color: white;
+  }
+
+  .google {
+    background: #4285f4;
+    color: white;
+  }
+
+  .amazon {
+    background: #e3e8ee;
+    color: #1a1f36;
+  }
+
+  .samsung {
+    background: #ff6b00;
+    color: white;
+  }
+/*--------investibox------------------*/
