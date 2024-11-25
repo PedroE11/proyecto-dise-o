@@ -3,7 +3,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
 
         body {
@@ -18,6 +17,7 @@
             color: #ffffff;
             padding: 20px 40px;
             position: relative;
+            font-family: 'clash display';
         }
 
         .back-button {
@@ -42,6 +42,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px;
+            font-family: 'Nunito';
         }
 
         .intro-text {
