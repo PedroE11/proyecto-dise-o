@@ -137,7 +137,7 @@ nav {
 .content_log_in {
     position: relative;
     background-color: white;
-    width: 40%;
+    width: 500px;
     max-width: 700px;
     height: 90%;
     max-height: 1400px; 
@@ -166,6 +166,7 @@ nav {
     
 }
 div.right-section_log_in{
+<<<<<<< HEAD:css/login.css
     text-align: left;
     position: relative;
     top: -600px;
@@ -178,12 +179,24 @@ div.text_log_in h1 {
     font-size: 5rem;
     margin-bottom: 1px;
     font-family: 'Clash Display', serif;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+div.text_log_in h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+>>>>>>> 431e81f4c1da759ef3b90f46bc2829f724566614:css/log_in.css
 }
 
 div.text_log_in p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 1px;
+    font-size: 16px;
+    margin-bottom: 32px;
 }
 
 .left-section_log_in, .right-section_log_in {
@@ -219,7 +232,11 @@ div.text_log_in p {
 }
 
 .login-form_log_in h2 {
+<<<<<<< HEAD:css/login.css
     font-size: 60px;
+=======
+    font-size: 80px;
+>>>>>>> 431e81f4c1da759ef3b90f46bc2829f724566614:css/log_in.css
     margin-bottom: 10px;
 }
 
@@ -228,7 +245,7 @@ div.text_log_in p {
 }
 
 .login-form_log_in a {
-    color: #007bff;
+    color: #151F6D;
     text-decoration: none;
 }
 
