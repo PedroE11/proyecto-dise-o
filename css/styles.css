@@ -1,3 +1,7 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +29,7 @@ nav {
     color: white;
     font-size: 3rem;
     font-weight: bold;
+    font-family: 'Nunito',sans-serif;
 }
 
 .nav-links {
@@ -94,8 +99,7 @@ nav {
     width: 400px;
     padding: 30px;
     border-radius: 10px;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 18px;
     line-height: 1.4;
     }
 
@@ -137,7 +141,7 @@ nav {
 
 .triangles-b {
     position: absolute;
-    top: 50px;
+    top: 500px;
     right: 1200px;
     }
 
@@ -150,7 +154,7 @@ nav {
 .triangles-d {
     position: absolute;
     top: 1320px;
-    right: 1300px;
+    right: 1680px;
     }
 
 
@@ -204,21 +208,21 @@ nav {
     width: 150px;
     height: 150px;
     top: 800px;
-    right: 1240px;
+    right: 1390px;
     }
 
 .circle.medium {
     width: 100px;
     height: 100px;
     top: 850px;
-    left: 270px;
+    left: 260px;
     }
 
 .circle.small {
     width: 50px;
     height: 50px;
     top: 950px;
-    left: 170px;
+    left: 350px;
     }
 
 .connect-bank-image {
@@ -250,8 +254,8 @@ nav {
     position: absolute;
     bottom: -20px; 
     left: 50%; 
-    transform: translateX(100px);
-    transform: translateY(230px);
+    transform: translateX(90px);
+    transform: translateY(40px);
     display: flex;
     align-items: flex-end;
     margin-left: 100px; 

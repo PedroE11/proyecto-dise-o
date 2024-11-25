@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    
 }
 
 body {
@@ -12,6 +12,69 @@ body {
     
 }
 
+.text_log_in {
+    text-align: left;
+    position: relative;
+    top: -50px;
+    right: 800px;
+    color: white; 
+    z-index: 2; 
+    max-width: 400px; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+
+div.text_log_in h1 {
+    font-size: 5rem;
+    margin-bottom: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700; 
+}
+
+div.text_log_in p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400; 
+}
+
+.right-section_log_in, 
+.login-form_log_in,
+.input-group_log_in input,
+.remember-me_log_in label,
+.login-button_log_in,
+.social-button_log_in {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.logo_log_in {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.login-form_log_in h2 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+    transform: translateY(-60px);
+}
+
+
+.login-button_log_in,
+.social-button_log_in {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600; 
+}
+
+
+.login-form_log_in a {
+    font-family: 'Nunito', sans-serif;
+    color: #007bff;
+    text-decoration: none;
+}
 
 nav {
     background-color: #001233;
@@ -23,8 +86,9 @@ nav {
 
 .logo {
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
+    font-family: 'Nunito',sans-serif;
 }
 
 .nav-links {
@@ -37,6 +101,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 .login-btn {
@@ -93,11 +158,12 @@ nav {
     text-align: left;
     position: relative;
     top: -50px;
-    right: 800px;
+    right: 1100px;
     color: white; 
     z-index: 2; 
     max-width: 400px; 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    
 }
 div.right-section_log_in{
     text-align: left;
@@ -106,10 +172,12 @@ div.right-section_log_in{
     right: 20px; 
     z-index: 2;
     max-width: 400px;
+    font-family: 'Nunito', sans-serif;
 }
 div.text_log_in h1 {
     font-size: 5rem;
     margin-bottom: 1px;
+    font-family: 'Clash Display', serif;
 }
 
 div.text_log_in p {
@@ -135,7 +203,7 @@ div.text_log_in p {
 }
 
 .left-section_log_in p {
-    margin: 5px 0;
+    margin: 5px;
     font-size: 14px;
 }
 
@@ -151,7 +219,7 @@ div.text_log_in p {
 }
 
 .login-form_log_in h2 {
-    font-size: 32px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
